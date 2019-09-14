@@ -1,0 +1,15 @@
+RFC 0001
+Interactive Problem Specifications
+2019-09-14
+==========
+[x] Specification
+[ ] Working code
+[ ] Discussions
+==========
+
+1. There is at most one library source file, named as "lib.cpp".
+2. Library can not have its own header files. If some library needs to include some header file, put it into the library.
+3. Library source file is compiled with the same compiler and same options as the contestant's source file's.
+4. Upon compilation, the library file is checked before compiling the contestant's file. If there is a library file, compile it. Otherwise library compilation is skipped.
+5. Upon linkage, if there is a library object file, link it. Otherwise library linkage is skipped.
+6. There is no other difference between interactive problems and traditional problems.
