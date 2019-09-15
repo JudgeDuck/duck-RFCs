@@ -8,8 +8,9 @@ Interactive Problem Specifications
 ==========
 
 1. There is at most one library source file, named as "lib.cpp".
-2. Library can not have its own header files. If some library needs to include some header file, put it into the library.
-3. Library source file is compiled with the same compiler and same options as the contestant's source file's.
-4. Upon compilation, the library file is checked before compiling the contestant's file. If there is a library file, compile it. Otherwise library compilation is skipped.
-5. Upon linkage, if there is a library object file, link it. Otherwise library linkage is skipped.
-6. There is no other difference between interactive problems and traditional problems.
+2. The library can have its own header files. These files should be placed in a directory named as "lib_include".
+3. The library can provide public header files to contestants. These files should be placed in a directory named as "include".
+4. The library source file is compiled with the same options as the contestant's C++ source files'.
+5. Upon compilation, the library source file is checked before compiling the contestant's file. If there is a library source file, compile it. Otherwise library compilation is skipped.
+6. Upon linkage, if there is a library object file, link it. Otherwise library linkage is skipped.
+7. There is no other difference between interactive problems and traditional problems.
